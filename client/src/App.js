@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header.js'
+// import Login from './components/Login.js'
 import MapView from './components/Map.js'
+import DropDown from './components/DropDown.js'
+// import List from './components/List.js'
 import Footer from './components/Footer.js'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Vagabond Eats</h1>
-        </header>
+        <Header />
         <div className="App-body">
         <MapView />
+        <DropDown />
         </div>
         <Footer />
       </div>

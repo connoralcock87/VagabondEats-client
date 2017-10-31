@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="App-footer">
       <div>
         <p>&copy; Vagabond Eats - Denver, CO</p>
       </div>

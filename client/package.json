@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "leaflet": "^1.2.0",
     "react": "^16.0.0",
+    "react-bootstrap": "^0.31.5",
     "react-dom": "^16.0.0",
+    "react-leaflet": "^1.7.1",
     "react-scripts": "1.0.14"
   },
   "scripts": {
