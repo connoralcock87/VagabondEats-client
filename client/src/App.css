@@ -4,7 +4,7 @@
 
 .App-header {
   background-color: #696969;
-  height: 150px;
+  height: 20%;
   padding: 20px;
   color: #FFFFF0;
 }
@@ -19,14 +19,12 @@
 
 .App-footer {
   background-color: #696969;
-  height: 75px;
+  height: 20%;
   padding: 20px;
-  margin-bottom: 10px;
   width: 100%;
-  position: fixed;
   color: #FFFFF0;
 }
 
-.btn-group dropup {
-  font-size: x-large;
+.dropdown {
+  margin: 1em 0;
 }

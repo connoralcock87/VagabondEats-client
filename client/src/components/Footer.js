@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="App-footer">
       <div>
-        <p>&copy; Vagabond Eats - Denver, CO</p>
+        <p className="footer-text">&copy; Vagabond Eats - Denver, CO</p>
       </div>
     </footer>
   )

@@ -4,18 +4,18 @@ import {Map, TileLayer, Marker, Popup} from 'react-leaflet'
 
 const position = [39.742043, -104.991531]
 
-export class MapView extends React.Component {
+// export class MapView extends React.Component {
   // constructor(props) {
   //   super(props)
   // }
-  render() {
+  // render() {
 
     const cordsTest = [39.758265, -105.007315]
     const cordsTest2 = [39.761981, -104.981562]
     const cordsTest3 = [39.769584, -104.905980]
 
     const key1 = 1
-
+const MapView = () => {
     return (
       <div>
         <Map
@@ -44,5 +44,6 @@ export class MapView extends React.Component {
       </div>
     )
   }
-}
+// }
+
 export default MapView

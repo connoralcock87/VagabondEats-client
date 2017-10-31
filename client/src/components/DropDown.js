@@ -2,14 +2,14 @@ import React from 'react';
 
 const DropDown = () => {
   return (
-//truck_location.day
-  <div className="btn-group dropup">
-    <button type="button" className="btn btn-secondary">Select a day of the week</button>
-    <button type="button" className="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span className="sr-only">Toggle Dropdown</span>
+    <div className="dropdown">
+    <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Please select day of the week
     </button>
-    <div className="dropdown-menu">
-    <h1>Monday</h1>
+    <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a className="dropdown-item" href="#">Action</a>
+      <a className="dropdown-item" href="#">Another action</a>
+      <a className="dropdown-item" href="#">Something else here</a>
     </div>
   </div>
   )
