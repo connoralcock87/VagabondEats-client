@@ -7,7 +7,7 @@ import DropDown from './components/DropDown.js'
 // import List from './components/List.js'
 import Footer from './components/Footer.js'
 import List from './components/List.js'
-const url = 'http://localhost:3000';
+const url = 'http://localhost:3000/';
 
 class App extends Component {
   // constructor(props) {
@@ -20,7 +20,21 @@ class App extends Component {
 
   state = {
     trucks: null,
+    mapSelection: null,
+    day: null
+  }
 
+  updateMap = (key, event) => {
+    var day = event.target.id
+
+    var mapSelection = this.state.trucks.filter( truck => {
+      return truck.day === day
+    })
+
+    this.setState({
+      mapSelection: mapSelection
+    })
+    console.log(this.state);
   }
 
   componentWillMount() {
@@ -41,9 +55,11 @@ class App extends Component {
       <div className="App">
         <Header />
         <div className="App-body">
-        <DropDown />
-        <MapView trucks={ this.state.trucks }/>
-        <List trucks={ this.state.trucks }/>
+        <DropDown updateMap={this.updateMap}/>
+        {this.state.mapSelection &&
+          <MapView mapSelection={ this.state.mapSelection }/>
+        }
+        <List mapSelection={ this.state.mapSelection }/>
         </div>
         <Footer />
       </div>

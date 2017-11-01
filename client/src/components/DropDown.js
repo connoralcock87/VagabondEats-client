@@ -1,17 +1,21 @@
 import React from 'react';
+import { ButtonToolbar, DropdownButton, MenuItem } from 'react-bootstrap';
 
-const DropDown = () => {
+const DropDown = (props) => {
   return (
-    <div className="dropdown">
-    <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Please select day of the week
-    </button>
-    <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a className="dropdown-item" href="#">Action</a>
-      <a className="dropdown-item" href="#">Another action</a>
-      <a className="dropdown-item" href="#">Something else here</a>
+    <div>
+      <ButtonToolbar>
+        <DropdownButton bsSize="large" title="Please select day of the week" id="dropdown-size-large" onSelect={ props.updateMap }>
+          <MenuItem eventKey="1" id="Monday">Monday</MenuItem>
+          <MenuItem eventKey="2" id="Tuesday">Tuesday</MenuItem>
+          <MenuItem eventKey="3" id="Wednesday">Wednesday</MenuItem>
+          <MenuItem eventKey="4" id="Thursday">Thursday</MenuItem>
+          <MenuItem eventKey="5" id="Friday">Friday</MenuItem>
+          <MenuItem eventKey="6" id="Saturday">Saturday</MenuItem>
+          <MenuItem eventKey="7" id="Sunday">Sunday</MenuItem>
+        </DropdownButton>
+      </ButtonToolbar>
     </div>
-  </div>
   )
 }
 

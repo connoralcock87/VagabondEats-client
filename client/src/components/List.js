@@ -1,18 +1,20 @@
 import React from 'react';
 
-const List = () => {
+const List = (props) => {
+console.log(props);
+
+  if (props.mapSelection) {
+    var truckList = props.mapSelection.map((location, index) => {
+      return <li>Truck: {location.name} <br></br> Hours: {location.startTime} - {location.endTime}</li>
+    })
+
     return (
       <ul>
-        <li>Filler data</li>;
-        <li>Filler data</li>;
-        <li>Filler data</li>;
-        <li>Filler data</li>;
-        <li>Filler data</li>;
-        <li>Filler data</li>;
-        <li>Filler data</li>;
-        <li>Filler data</li>;
+        {truckList}
       </ul>
     )
+  }
+  return null
   }
 
 export default List
