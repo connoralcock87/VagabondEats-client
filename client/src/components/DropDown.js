@@ -3,7 +3,7 @@ import { ButtonToolbar, DropdownButton, MenuItem } from 'react-bootstrap';
 
 const DropDown = (props) => {
   return (
-    <div>
+    <div class="DropDown">
       <ButtonToolbar>
         <DropdownButton bsSize="large" title="Please select day of the week" id="dropdown-size-large" onSelect={ props.updateMap }>
           <MenuItem eventKey="1" id="Monday">Monday</MenuItem>

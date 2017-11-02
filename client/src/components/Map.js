@@ -22,7 +22,7 @@ const MapView = (props) => {
     return (
       <Marker key={index} position={location.coordinates.split(",")}>
         <Popup>
-          <p>Truck: {location.name}<br/>Hours: {location.startTime} - {location.endTime}<br/></p>
+          <p>Truck: {location.name}<br/>Hours: {location.startTime} - {location.endTime}<br/>Address: {location.address}</p>
         </Popup>
       </Marker>
     )
@@ -31,7 +31,7 @@ const MapView = (props) => {
     return (
       <div>
         <Map
-          style={{height: "70vh", width: "100vw"}}
+          style={{height: "60vh", width: "100vw"}}
           center={position}
           zoom={13}>
           <TileLayer
